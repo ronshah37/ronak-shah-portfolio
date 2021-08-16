@@ -6,7 +6,7 @@ const Contact = ({ categories }) => {
     return (
         <Layout>
             <div className="contact-wrapper">
-                <h2>You reach me via:</h2>
+                <h2>You can reach me via:</h2>
                 <ul>
                     <li>
                         <p>
