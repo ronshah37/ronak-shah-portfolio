@@ -1,0 +1,364 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+/* Initial CSS for default values */
+html {
+    box-sizing: border-box;
+    overflow-y: scroll;
+    /* #dcdcdc #f2f0eb*/
+    --body-color: #eeeeee;
+
+    font-family: Roboto, "Times New Roman", Times, serif;
+    scroll-behavior: smooth;
+    /*Header variables*/
+    --header-color: #0c4160;
+    --header-menu-font-color: #4444ff;
+    --menu-hover-color: #0000e7;
+    --menu-bg-color: #ffffff;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0 1em 1em 1em;
+    background-color: var(--body-color);
+    background-attachment: fixed;
+}
+
+/* Header changes starts here */
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    border-width: 1em;
+    border-color: red;
+    background-color: var(--header-color);
+    height: 5em;
+}
+
+.page-header > .logo {
+    display: flex;
+    padding: 0.5em;
+    background-color: var(--header-color);
+}
+
+nav.navigation {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu {
+    display: flex;
+    font-size: 1.3em;
+    flex-direction: row;
+    color: black;
+    text-decoration: none;
+    position: unset;
+    width: 32em;
+    background-color: var(--menu-bg-color);
+    box-shadow: none;
+}
+
+.menu > li {
+    padding: 1em;
+}
+
+.menu-links {
+    color: var(--header-menu-font-color);
+    background: linear-gradient(
+        to right,
+        var(--menu-hover-color),
+        var(--menu-hover-color) 50%,
+        var(--header-menu-font-color) 50%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 275ms ease;
+}
+
+.menu-links:hover {
+    background-position: 0 100%;
+}
+
+header > nav > ul li {
+    list-style-type: none;
+    display: flex;
+}
+
+/* Header changes ends here */
+
+/* Resume page changes starts here */
+.resume {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.resume h2 {
+    color: #152238;
+}
+/* Resume page changes ends here */
+
+/* Work page changes starts here */
+.work-page-wrapper {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: 0.5em;
+    background-color: white;
+}
+
+.worklist {
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: 0.5em;
+    background-color: #2e8bc0;
+}
+
+.workitem {
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: 0.5em;
+    background-color: white;
+    display: flex;
+    margin-bottom: 1em;
+}
+
+.workitem-img {
+    width: 15em;
+    height: 15em;
+    object-fit: contain;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.workitem-work-wrapper {
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: 0.5em;
+}
+
+.workitem-content {
+    margin-left: 1em;
+}
+
+.work-page-wrapper h2,
+h3 {
+    color: #152238;
+}
+
+.work-page-wrapper p {
+    color: #1c2e4a;
+}
+/* Work page changes ends here */
+
+/* Work page changes starts here */
+
+.about-wrapper {
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: 0.5em;
+    background-color: #b1d4e0;
+    display: flex;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.about-picture {
+    width: 15em;
+    height: 15em;
+    object-fit: contain;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-content {
+    margin-left: 1em;
+}
+
+.about-wrapper h2 {
+    color: #152238;
+}
+
+.about-wrapper p {
+    color: #1c2e4a;
+}
+
+/* Work page changes ends here */
+
+/* Contact page changes starts here */
+
+.contact-wrapper {
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: 0.5em;
+    background-color: #b1d4e0;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.contact-wrapper h2 {
+    color: #152238;
+}
+
+.contact-wrapper p {
+    color: #1c2e4a;
+}
+
+/* Contact page changes ends here */
+
+/* What's New page changes starts here */
+
+.whatsnew-wrapper {
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: 0.5em;
+    background-color: #b1d4e0;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.whatsnew-wrapper h2 {
+    color: #152238;
+}
+
+.whatsnew-wrapper p {
+    color: #1c2e4a;
+}
+
+/* What's New page changes ends here */
+
+/* Footer changes starts here */
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.container-reserved {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.container-reserved a:nth-child(2) {
+    padding: 0;
+    margin: 1em;
+}
+
+.container-reserved a:nth-child(1) {
+    padding-left: 0.2em;
+}
+
+.footer-sections {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.footer-about-us {
+    width: 20em;
+}
+
+.page-footer {
+    background-color: #26272b;
+    line-height: 1.5em;
+    color: #737373;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page-footer hr {
+    border-top-color: white;
+    opacity: 1;
+}
+
+.page-footer h3 {
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 0.4em;
+    letter-spacing: 0.2em;
+}
+
+.page-footer a {
+    color: #737373;
+}
+
+.page-footer a:hover {
+    color: #3366cc;
+    text-decoration: none;
+}
+
+.footer-links {
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer-links li {
+    display: block;
+}
+
+.footer-links a {
+    color: #737373;
+}
+
+.footer-links a:active,
+.footer-links a:focus,
+.footer-links a:hover {
+    color: #3366cc;
+    text-decoration: none;
+}
+
+.footer-links.inline li {
+    display: inline-block;
+}
+
+.page-footer .social-icons {
+    text-align: left;
+}
+
+.copyright-text {
+    /* margin: auto; */
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.social-icons {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 0.5em;
+}
+
+.social-icons a {
+    display: inline-block;
+    line-height: 3.5em;
+    width: 3.5em;
+    height: 3.5em;
+    text-align: left;
+    margin-right: 0.2em;
+    border-radius: 100%;
+}
+
+.social-icon {
+    width: 3em;
+    height: 3em;
+    object-fit: contain;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Footer changes ends here */
+
+/*Handling Responsive behavior using grid and media query*/
