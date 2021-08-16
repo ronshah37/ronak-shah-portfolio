@@ -1,0 +1,1 @@
+(self.webpackChunkfast_grocery=self.webpackChunkfast_grocery||[]).push([[55],{55:(c,e,s)=>{"use strict";s.r(e),s.d(e,{default:()=>a});const a=s.p+"033c798e7c26c029ba58b6c248865e17.svg"}}]);

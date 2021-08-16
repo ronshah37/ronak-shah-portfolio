@@ -1,0 +1,1 @@
+(self.webpackChunkfast_grocery=self.webpackChunkfast_grocery||[]).push([[914],{914:(e,c,s)=>{"use strict";s.r(c),s.d(c,{default:()=>a});const a=s.p+"9869d1d64464447cc63a4bbf9ba493be.mp4"}}]);
